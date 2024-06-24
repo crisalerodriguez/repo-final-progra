@@ -14,8 +14,8 @@ def getAllImages(input=None):
 
     # recorre el listado de objetos JSON, lo transforma en una NASACard y lo agrega en el listado de images. Ayuda: ver mapper.py.
   
-    for objeto in json_collection:
-        nasa_card = mapper.fromRequestIntoNASACard(objeto)
+    for object in json_collection:
+        nasa_card = mapper.fromRequestIntoNASACard(object)
         images.append(nasa_card)
 
     return images
